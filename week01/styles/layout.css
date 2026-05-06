@@ -1,0 +1,86 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #ebf4fb;
+}
+
+header, footer {
+    background-color: #1f4e79;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    background: linear-gradient(135deg, #1f4e79 0%, #2f6f9f 100%);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+footer {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    background: #163a5f;
+}
+
+nav {
+    background-color: #2f6f9f;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background: #eef4ff;
+}
+
+main > div {
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(18, 32, 80, 0.08);
+}
+
+main > div:first-child {
+    background: #ffffff;
+}
+
+main > div:last-child {
+    background: #f3f8ff;
+}
