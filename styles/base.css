@@ -8,6 +8,7 @@
     --color-secondary: #252525;
     --color-accent: #360bf5;
     --color-border: #dbeafe;
+    --color-footer: yellow;
 }
 
 html {
@@ -42,7 +43,7 @@ p, a, li, span {
 
 header, footer {
     background-color: var(--color-accent);
-    color: #ffffff;
+    color: var(--color-border);
     display: flex;
     flex-direction: column;
 }
@@ -112,7 +113,7 @@ main h1 {
 section.card {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
-    box-shadow: 0 8px 24px rgba(23, 36, 45, 0.08);
+    box-shadow: 0 8px 24px var(--color-border);
     border-radius: 12px;
     min-height: 200px;
 }
@@ -134,7 +135,7 @@ section.card {
     font-weight: 600;
     margin-bottom: 10px;
     background-color: var(--color-accent);
-    color: #ffffff;
+    color: var(--color-border);
     padding: 10px;
     text-align: center;
     border-radius: 12px;
@@ -277,6 +278,6 @@ footer {
 
 #lastModified {
     margin-top: -15px;
-    color: yellow;
+    color: var(--color-footer);
     font-weight: 500;
 }
