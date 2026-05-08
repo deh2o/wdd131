@@ -224,6 +224,13 @@ section.card {
     object-fit: cover;
 }
 
+.flag-image p {
+    font-size: 0.7rem;
+    color: var(--color-secondary);
+    margin: 0;
+    font: bold;
+}
+
 .location-title {
     font-size: 1.1rem;
     font-weight: 600;
