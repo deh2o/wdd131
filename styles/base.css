@@ -253,4 +253,30 @@ section.card {
         margin-top: -20px;
     }
 
+    .resource-items {
+    margin-top: 0px;
+    }
+
+}
+
+.resource-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#lastModified {
+    margin-top: -15px;
+    color: yellow;
+    font-weight: 500;
 }
