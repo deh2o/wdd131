@@ -1,0 +1,13 @@
+/* Lets write a containing media query to be applied at a viewpoint width of 500 pixels or greater */
+@media screen and (min-width: 500px) {
+    /* lets make the header to have a black background with white text */
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* lets change the main element to display two columns of equal size */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}

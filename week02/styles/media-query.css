@@ -1,0 +1,26 @@
+/* lets useGoogle Font - Roboto in the body rule */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* lets make the header, main and footer have a maximum width of 640 pixels, make margin 1rem auto, make a faint border, include appropriate padding, and then have a blueish background color */
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #3704ec;
+}
+
+/* lets declare the main element as a css grid with one column and an equal gap of 1rem */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* lets declare the section elements to also have padding and a lighter or white background color */
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+}
