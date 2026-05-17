@@ -1,0 +1,25 @@
+/* Large Screen View */
+@media only screen and (min-width: 40em) {
+    header p {
+        visibility: visible;
+        font-size: 2rem;
+        padding: 1rem;
+        color: var(--color-white);
+    }
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
