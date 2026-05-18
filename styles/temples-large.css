@@ -6,6 +6,10 @@
         padding: 1rem;
         color: var(--color-white);
     }
+	nav {
+    display: block;
+}
+
 	h1 {
 		font-size: 2rem;
 	}
