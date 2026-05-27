@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title> WDD131 - Dynamic Web Fundamentals - Agha Idam Walter </title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals project page for W03, Country Pages, created by Agha Idam Walter. This page showcases dynamic content related to various countries, including information, images, and interactive features.">
+    <meta name="author" content="Agha Idam Walter">
+    <link rel="stylesheet" href="styles/place.css">
+    <script id="el" src="scripts/place.js" defer>
+    </script>
+</head>
+<body>
+    <header>
+        <h1>NIGERIA</h1>
+    </header>
+    <main>
+        <div class="Banner-Container">
+            <!-- banner image -->
+            <div class="banner">
+                <img
+                    src="images/banner-2.webp"
+                    srcset="images/banner-2.webp 800w,
+                            images/banner-2.webp 1200w,
+                            images/banner-2.webp 2000w"
+                    sizes="100vw"
+                    alt="Nigeria Banner Image"
+            >
+            </div>
+
+            <!-- weather data -->
+            <div class="weatherDetails">
+                <div class="weather-title">
+                    <h2 class="weather-heading">Data</h2>
+                </div>
+                <div>
+                    <p><span class="label">Area:</span><span> 923,768 km²</span></p>
+                    <p><span class="label">Population:</span><span> Over 220m</span></p>
+                    <p><span class="label">Capital:</span><span> Abuja</span></p>
+                    <p><span class="label">Language:</span><span> English</span></p>
+                    <p><span class="label">Currency:</span><span> Nigerian Naira (₦)</span></p>
+                    <p><span class="label">Time Zone:</span><span> UTC+1</span></p>
+                    <p><span class="label">Calling Code:</span><span> +234</span></p>
+                    <p><span class="label">Internet TLD:</span><span> .ng</span></p>
+                </div>
+            </div>
+            <div class="weatherDetails">
+                <div class="weather-title">
+                    <h2 class="weather-heading">
+                        Weather
+                        <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+                    </h2>
+                </div>
+                <div>
+                    <p><span class="label">Temperature:</span><span id="temperature"></span></p>
+                    <p><span class="label">Conditions:</span><span id="conditions"></span></p>
+                    <p><span class="label">Wind:</span><span id="wind"></span></p>
+                    <p><span class="label">Wind Chill:</span><span id="windChill"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span> || Agha Idam Walter || Nigeria || All rights reserved.
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+
+</body>
+</html>
