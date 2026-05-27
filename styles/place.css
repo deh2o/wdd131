@@ -115,11 +115,12 @@ footer {
     align-items: center;
     text-align: center;
     padding: 20px;
+    color: var(--color-bg);
 }
 
 #lastModified {
     margin-top: -15px;
-    color: var(--color-footer);
+    color: var(--color-bg);
     font-weight: 500;
 }
 
