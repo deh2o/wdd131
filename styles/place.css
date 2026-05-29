@@ -1,7 +1,7 @@
 :root {
     --font-sans: 'Plus Jakarta Sans', sans-serif;
     --font-serif: 'Playfair Display', serif;
-    --color-primary: #008751;
+    --color-primary: #006633;
     --color-secondary: #dbeafe;
     --color-text: #1f2937;
     --color-bg: #f8fafc;
@@ -115,12 +115,13 @@ footer {
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: var(--color-bg);
+    color: var(--color-secondary);
+    background-color: var(--color-text);
 }
 
 #lastModified {
     margin-top: -15px;
-    color: var(--color-bg);
+    color: var(--color-secondary);
     font-weight: 500;
 }
 
