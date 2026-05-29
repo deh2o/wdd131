@@ -110,6 +110,10 @@ header {
     height: 60px;
 }
 
+.weather-emo {
+    display: none;
+}
+
 footer {
     justify-content: center;
     align-items: center;
@@ -166,7 +170,12 @@ footer {
     }
 
     .weather-icon {
-        width: 40px;
-        height: 40px;
+        display: none;
+    }
+
+    .weather-emo {
+        display: block;
+        width: 60px;
+        height: 60px;
     }
 }
