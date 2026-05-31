@@ -1,0 +1,153 @@
+/* lets initialize text and color variables for the page */
+
+:root {
+    --color-primary: #333;
+    --color-secondary: #ccc;
+    --color-tertiary: #f5f5f5;
+    --color-white: #fff;
+    --color-menu: #ace;
+    /* --color-menu-mobile: #eee; */
+    --color-black: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* initialize CSS code for the page and body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Sansita", sans-serif;
+    background-color: var(--color-tertiary);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem;
+}
+
+header p {
+	visibility: hidden;
+}
+
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: var(--color-menu);
+	color: var(--color-black);
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#mobile-logo {
+    margin-left: 100px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+nav {
+	background-color: var(--color-menu);
+    display: flex;
+    justify-content: flex-start;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--color-black);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: var(--color-white);
+	background-color: var(--color-black);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* END OF MOBILE VIEW */
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+.container img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.container div {
+    font-size: 1.2rem;
+    padding: 0.1rem;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.tempLabel {
+    min-width: 35%;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#lastModified {
+    margin-top: 5px;
+    color: var(--color-white);
+    font-weight: 500;
+}
