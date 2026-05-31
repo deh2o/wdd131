@@ -1,12 +1,12 @@
 /* lets initialize text and color variables for the page */
 
 :root {
-    --color-primary: #333;
+    --color-primary: #333333;
     --color-tertiary: #f5f5f5;
-    --color-white: #fff;
-    --color-menu: #ace;
+    --color-white: #ffffff;
+    --color-menu: #aaccee;
     /* --color-menu-mobile: #eee; */
-    --color-black: #000;
+    --color-black: #000000;
 }
 
 * {
