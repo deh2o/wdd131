@@ -7,7 +7,6 @@
     --color-menu: #aaccee;
     /* --color-menu-mobile: #eee; */
     --color-secondary: #000000;
-    --color-card: #555555;
 }
 
 * {
@@ -123,10 +122,11 @@ main h1 {
     border: 1px solid var(--color-primary);
     border-radius: 5px;
     padding: 0.5rem;
+    box-shadow: 0 5px 10px var(--color-menu);
 }
 
 .container figure:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
 }
 
 .container img {
