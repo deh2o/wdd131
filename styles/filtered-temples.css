@@ -7,6 +7,7 @@
     --color-menu: #aaccee;
     /* --color-menu-mobile: #eee; */
     --color-secondary: #000000;
+    --color-card: #555555;
 }
 
 * {
@@ -116,6 +117,16 @@ main h1 {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-gap: 25px;
     place-items: center;
+}
+
+.container figure {
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.container figure:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .container img {
