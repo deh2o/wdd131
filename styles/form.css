@@ -4,7 +4,7 @@
     --color-secondary: #ccc;
     --color-tertiary: #fff;
     --color-menu: #ace;
-    --color-black: #000;
+    --color-text: #000;
 }
 
 * {
@@ -154,7 +154,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var(--color-black);
+    background-color: var(--color-text);
 }
 
 /* footer */
