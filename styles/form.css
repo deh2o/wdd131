@@ -1,9 +1,166 @@
+/* DEFAULTS */
+:root {
+    --color-primary: #333;
+    --color-secondary: #ccc;
+    --color-tertiary: #f4f4f4;
+    --color-menu: #ace;
+    --color-black: #000;
+}
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Sansita", sans-serif;
+    background-color: var(--color-tertiary);
+
+}
+
+/* initialize CSS code for the page and body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-menu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+
+main {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.review-main {
+    text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px;
+  background: var(--color-menu);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
+  border: 0px;
+  background: var(--color-tertiary);
+}
+
+fieldset {
+    border: none;
+    margin-top: 15px;
+}
+
+/* Make all rating items horizontal */
+.rating-group {
+    display: flex;
+    gap: 15px;
+}
+
+/* Stack label above input */
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Optional styling */
+.rating-item label {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.radio-group {
+    margin-top: 15px;
+}
+
+/* Make paragraph full width */
+.radio-group p {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Arrange each checkbox row */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between input and label */
+    margin-bottom: 8px;
+}
+
+/* Keep checkbox small and left */
+.checkbox-group input {
+    width: auto;
+    margin: 0;
+    transform: translateY(2px); /* ✅ fine-tune vertical position */
+}
+
+/* Label stays to the right */
+.checkbox-group label {
+    cursor: pointer;
+}
+
+/* Textarea */
+.textarea-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.textarea-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+/* Submit button */
+
+input[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-black);
+}
 
 /* footer */
 footer {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-menu);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -12,6 +169,12 @@ footer {
 
 #lastModified {
     margin-top: 5px;
-    color: var(--color-white);
+    color: var(--color-secondary);
     font-weight: 500;
+}
+
+@media (min-width: 700px) {
+    form {
+        margin: auto;
+    }
 }

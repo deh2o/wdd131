@@ -1,4 +1,21 @@
-//
+//create an array of products with id and name
+
+const products = [
+  { id: "p1", name: "Smart TV" },
+  { id: "p2", name: "Laptop" },
+  { id: "p3", name: "Washing Machine" },
+  { id: "p4", name: "Refrigerator" }
+];
+
+// Lets populate the product options using javascript
+const select = document.getElementById("product");
+
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    select.appendChild(option);
+});
 
 
 //Footer
