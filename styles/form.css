@@ -1,0 +1,17 @@
+
+
+/* footer */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#lastModified {
+    margin-top: 5px;
+    color: var(--color-white);
+    font-weight: 500;
+}

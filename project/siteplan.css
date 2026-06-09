@@ -45,12 +45,12 @@ footer {
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: var(--color-secondary);
-    background-color: var(--color-text);
+    color: white;
+    background-color: #2E4F2E;
 }
 
 #lastModified {
     margin-top: -15px;
-    color: var(--color-secondary);
+    color: #C9A227;
     font-weight: 500;
 }
